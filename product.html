@@ -1,0 +1,560 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop beautiful fresh flower bouquets at Bloomora. Find roses, tulips, lilies and more.">
+
+    <title>Shop Flowers | Bloomora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        Fresh flowers, beautiful moments. Free delivery on orders over ৳2,000!
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-spa"></i>
+                Bloomora<span>.</span>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="product.html" class="active">Shop</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="#shop-products" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </a>
+                <a href="#" class="cart-icon" aria-label="Shopping cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>0</span>
+                </a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Shop Hero -->
+        <section class="shop-hero">
+            <div class="container">
+                <span class="section-tag">EXPLORE OUR FLOWER COLLECTION</span>
+                <h1>Flowers for Every <em>Beautiful Moment.</em></h1>
+                <p>
+                    Find the perfect blooms to express your feelings.
+                    Handpicked flowers, beautifully arranged just for you.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Breadcrumb -->
+        <div class="container breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>Shop Flowers</span>
+        </div>
+
+
+        <!-- Shop Categories -->
+        <section class="shop-categories">
+            <div class="container">
+
+                <div class="shop-category-list">
+
+                    <a href="#shop-products" class="shop-category-item active">
+                        <i class="fa-solid fa-border-all"></i>
+                        All Flowers
+                    </a>
+
+                    <a href="#shop-products" class="shop-category-item">
+                        <i class="fa-solid fa-spa"></i>
+                        Roses
+                    </a>
+
+                    <a href="#shop-products" class="shop-category-item">
+                        <i class="fa-solid fa-seedling"></i>
+                        Tulips
+                    </a>
+
+                    <a href="#shop-products" class="shop-category-item">
+                        <i class="fa-solid fa-leaf"></i>
+                        Lilies
+                    </a>
+
+                    <a href="#shop-products" class="shop-category-item">
+                        <i class="fa-solid fa-gift"></i>
+                        Gift Bouquets
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Product Listing -->
+        <section class="shop-products-section section-padding" id="shop-products">
+
+            <div class="container">
+
+                <div class="shop-toolbar">
+
+                    <div>
+                        <h2>Our Flower Collection</h2>
+                        <p>Showing 8 beautiful products</p>
+                    </div>
+
+                    <div class="shop-sort">
+                        <label for="sort-products">Sort by:</label>
+                        <select id="sort-products">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest Arrivals</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="shop-layout">
+
+                    <!-- Sidebar -->
+                    <aside class="shop-sidebar">
+
+                        <div class="filter-group">
+                            <h3>Categories</h3>
+
+                            <label>
+                                <input type="checkbox">
+                                All Flowers <span>(8)</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Roses <span>(3)</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Tulips <span>(2)</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Lilies <span>(1)</span>
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Mixed Bouquets <span>(2)</span>
+                            </label>
+                        </div>
+
+
+                        <div class="filter-group">
+                            <h3>Price Range</h3>
+
+                            <label>
+                                <input type="checkbox">
+                                Under ৳1,000
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                ৳1,000 – ৳2,000
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                ৳2,000 – ৳3,000
+                            </label>
+
+                            <label>
+                                <input type="checkbox">
+                                Above ৳3,000
+                            </label>
+                        </div>
+
+
+                        <div class="filter-group">
+                            <h3>Flower Color</h3>
+
+                            <div class="color-filters">
+                                <button class="color-option pink" aria-label="Pink"></button>
+                                <button class="color-option red" aria-label="Red"></button>
+                                <button class="color-option yellow" aria-label="Yellow"></button>
+                                <button class="color-option white" aria-label="White"></button>
+                                <button class="color-option purple" aria-label="Purple"></button>
+                            </div>
+                        </div>
+
+
+                        <div class="sidebar-promo">
+                            <i class="fa-solid fa-gift"></i>
+                            <h3>A Gift Full of Love</h3>
+                            <p>Make someone's day extra special with a beautiful bouquet.</p>
+                            <a href="#shop-products">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </aside>
+
+
+                    <!-- Product Grid -->
+                    <div class="shop-product-grid">
+
+
+                        <!-- Product 1 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="product-badge">Bestseller</span>
+                                <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=700&q=85" alt="Blushing Rose Bouquet">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">ROSES</span>
+                                <h3>Blushing Rose Bouquet</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(24)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳1,850</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 2 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="product-badge badge-new">New Arrival</span>
+                                <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=700&q=85" alt="Spring Blossom Tulips">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">TULIPS</span>
+                                <h3>Spring Blossom Tulips</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(18)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳2,200</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 3 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=700&q=85" alt="Pure Elegance Bouquet">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">LILIES</span>
+                                <h3>Pure Elegance Bouquet</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(32)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳2,500</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 4 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="product-badge badge-sale">Sale</span>
+                                <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=700&q=85" alt="Classic Red Romance">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">ROSES</span>
+                                <h3>Classic Red Romance</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(41)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳1,650</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 5 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=700&q=85" alt="Colorful Garden Mix">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">MIXED BOUQUETS</span>
+                                <h3>Colorful Garden Mix</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(15)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳1,950</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 6 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <span class="product-badge badge-new">New Arrival</span>
+                                <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=700&q=85" alt="Golden Sunshine Bouquet">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">MIXED BOUQUETS</span>
+                                <h3>Golden Sunshine Bouquet</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(20)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳2,350</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 7 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=85" alt="Pastel Dream Bouquet">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">TULIPS</span>
+                                <h3>Pastel Dream Bouquet</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(28)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳2,800</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Product 8 -->
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=700&q=85" alt="Sweet Floral Surprise">
+
+                                <button class="wishlist-btn" aria-label="Add to wishlist">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+
+                                <a href="#" class="quick-view">View Product</a>
+                            </div>
+
+                            <div class="product-info">
+                                <span class="product-category">GIFT BOUQUETS</span>
+                                <h3>Sweet Floral Surprise</h3>
+
+                                <div class="product-rating">
+                                    ★★★★★ <span>(12)</span>
+                                </div>
+
+                                <div class="product-bottom">
+                                    <strong>৳3,200</strong>
+                                    <a href="#" aria-label="View product"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-arrow"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a href="#" class="page-number active">1</a>
+                    <a href="#" class="page-number">2</a>
+                    <a href="#" class="page-number">3</a>
+                    <a href="#" class="page-arrow"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Promotional Banner -->
+        <section class="shop-promo">
+            <div class="container shop-promo-content">
+                <div>
+                    <span class="section-tag">SHARE THE LOVE</span>
+                    <h2>Every Flower Has a <em>Story.</em></h2>
+                    <p>Choose a beautiful bouquet and make someone's day unforgettable.</p>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Contact Us <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+                    <a href="index.html" class="logo footer-logo">
+                        <i class="fa-solid fa-spa"></i>
+                        Bloomora<span>.</span>
+                    </a>
+
+                    <p>
+                        Bringing happiness to your doorstep, one beautiful
+                        bouquet at a time. Let every moment bloom with love.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="product.html">Shop Flowers</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Customer Care</h3>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">FAQs</a>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</p>
+                    <p><i class="fa-solid fa-phone"></i> +880 1XXX-XXXXXX</p>
+                    <p><i class="fa-solid fa-envelope"></i> hello@bloomora.com</p>
+                    <p><i class="fa-regular fa-clock"></i> Everyday: 9 AM – 9 PM</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Bloomora. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart"></i> for flower lovers.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
